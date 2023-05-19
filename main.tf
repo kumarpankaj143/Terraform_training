@@ -18,7 +18,7 @@ resource "aws_instance" "ec2_example" {
       EOF
 }
 
-resource "aws_security_group" "main" {
+resource "aws_security_group" "pankaj_sg" {
     name        = "EC2-webserver-SG111"
   description = "Webserver for EC2 Instances"
 
