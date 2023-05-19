@@ -29,13 +29,7 @@ resource "aws_security_group" "pankaj_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  ingress {
-    from_port   = 22
-    protocol    = "TCP"
-    to_port     = 22
-    cidr_blocks = ["115.97.103.44/32"]
-  }
-
+  
   egress {
     from_port   = 0
     protocol    = "-1"
